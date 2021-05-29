@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>UNNE</title>
+
+
+    <link  rel= "shortcut icon " href="../assets/img/unne.png" type="image/x-icon">
+
+    <!-- Normalize V8.0.1 -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Bootstrap V4.3 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Bootstrap Material Design V4.0 -->
+    <link rel="stylesheet" href="../css/bootstrap-material-design.min.css">
+
+    <!-- Font Awesome V5.9.0 -->
+    <link rel="stylesheet" href="../css/all.css">
+
+    <!-- Sweet Alerts V8.13.0 CSS file -->
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+
+    <!-- Sweet Alert V8.13.0 JS file-->
+    <script src="../js/sweetalert2.min.js" ></script>
+
+    <!-- jQuery Custom Content Scroller V3.1.5 -->
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <!-- General Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+
+    <body>
+        
+        <!-- Main container -->
+        <main class="full-box main-container">
+            <!-- Nav lateral -->
+     <section class="full-box nav-lateral">
+        <div class="full-box nav-lateral-bg show-nav-lateral"></div>
+        <div class="full-box nav-lateral-content">
+            <figure class="full-box nav-lateral-avatar">
+                <i class="far fa-times-circle show-nav-lateral"></i>
+                <img src="../assets/avatar/Avatar.png" class="img-fluid" alt="Avatar">
+                <figcaption class="roboto-medium text-center">
+                    Carlos Alfaro <br><small class="roboto-condensed-light">Web Developer</small>
+                </figcaption>
+            </figure>
+            <div class="full-box nav-lateral-bar"></div>
+            <nav class="full-box nav-lateral-menu">
+                <ul>
+                    <li>
+                        <a href="inicio_secretario.html"><i class="fab fa-dashcube fa-fw"></i> &nbsp; Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-btn-submenu"><i class="fas fa-users fa-fw"></i> &nbsp; Alumnos <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li>
+                                <a href="nuevos_alumnos.html"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar alumno</a>
+                            </li>
+                            
+                            <li>
+                                <a href="buscar_alumno.html"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar alumnno</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-btn-submenu"><i class="fas fa-store-alt fa-fw"></i> &nbsp; Facultades <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li>
+                                <a href="facultad_nueva.html"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar facultad</a>
+                            </li>
+                            
+                            <li>
+                                <a href="buscar_facultad.html"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar facultad</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-btn-submenu"><i class="fas fa-store-alt fa-fw"></i> &nbsp; Carreras <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li>
+                                <a href="nueva_carrera.html"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar carrera</a>
+                            </li>
+                            
+                            <li>
+                                <a href="buscar_carrera.html"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar carrera</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    
+
+                    <li>
+                        <a href="#" class="nav-btn-submenu"><i class="far fa-address-book"></i> &nbsp; Citas <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li>
+                                <a href="nueva_reservacion.html"><i class="fas fa-plus fa-fw"></i> &nbsp; Nueva cita</a>
+                            </li>
+                            <li>
+                                <a href="reservaciones.html"><i class="far fa-calendar-alt fa-fw"></i> &nbsp; Reservaciones</a>
+                            </li>
+                            
+                            <li>
+                                <a href="lista_reservaciones.html"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Finalizados</a>
+                            </li>
+                            <li>
+                                <a href="buscar_citas.html"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; Buscar por fecha</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                   
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+        <!-- Page content -->
+        <section class="full-box page-content">
+            <nav class="full-box navbar-info">
+                <a href="#" class="float-left show-nav-lateral">
+                    <i class="fas fa-exchange-alt"></i>
+                </a>
+                
+                <a href="#" class="btn-exit-system">
+                    <i class="fas fa-power-off"></i>
+                </a>
+            </nav>
+
+
+            <!-- Page header -->
+            <div class="full-box page-header">
+                <h3 class="text-left">
+                    <i class="fas fa-plus fa-fw"></i> &nbsp; NUEVA CONSULTA MEDICA
+                </h3>
+               
+            </div>
+
+            <div class="container-fluid">
+                <ul class="full-box list-unstyled page-nav-tabs">
+                    <li>
+                        <a class="active" href="nueva_reservacion.html"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO CITAS</a>
+                    </li>
+                    <li>
+                        <a href="reservaciones.html"><i class="far fa-calendar-alt"></i> &nbsp; RESERVACIONES</a>
+                    </li>
+                   
+                    <li>
+                        <a href="lista_reservaciones.html"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; FINALIZADOS</a>
+                    </li>
+                    <li>
+                        <a href="buscar_citas.html"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR POR FECHA</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container-fluid form-neon">
+                    <div class="container-fluid">
+                        <p class="text-center roboto-medium">AGREGAR ALUMNO,DOCTOR</p>
+                        <p class="text-center">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalAlumno"><i class="fas fa-user-plus"></i> &nbsp; Agregar alumno</button>
+                           
+                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalAgregarDoctor"><i class="fas fa-box-open"></i> &nbsp; Agregar doctor</button>
+                        </p>
+                        <div>
+                            <span class="roboto-medium">ALUMNO:</span> 
+                            <span class="text-danger">&nbsp; <i class="fas fa-exclamation-triangle"></i> Seleccione un alumno</span>
+                            <form action="" style="display: inline-block !important;">
+                                Carlos Alfaro
+                                <button type="button" class="btn btn-danger"><i class="fas fa-user-times"></i></button>
+                            </form>
+                        </div>
+                        <form action="" autocomplete="off">
+                        <fieldset>
+                            <legend><i class="far fa-clock"></i> &nbsp; Fecha y hora de la cita</legend>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label for="prestamo_fecha_inicio">Fecha de la cita</label>
+                                            <input type="date" class="form-control" name="prestamo_fecha_inicio_reg" id="prestamo_fecha_inicio">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label for="prestamo_hora_inicio">Hora de la cita</label>
+                                            <input type="time" class="form-control" name="prestamo_hora_inicio_reg" id="prestamo_hora_inicio">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend><i class="fas fa-cubes"></i> &nbsp; Otros datos</legend>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-group">
+                                            <label for="prestamo_estado" class="bmd-label-floating">Estado</label>
+                                            <select class="form-control" name="prestamo_estado_reg" id="prestamo_estado">
+                                                <option value="" selected="" disabled="">Seleccione una opción</option>
+                                                <option value="Reservacion">Reservación</option>
+                                                
+                                                <option value="Finalizado">Cita instantánea</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="prestamo_observacion" class="bmd-label-floating">Observación</label>
+                                            <input type="text" pattern="[a-zA-z0-9áéíóúÁÉÍÓÚñÑ#() ]{1,400}" class="form-control" name="prestamo_observacion_reg" id="prestamo_observacion" maxlength="400">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                    
+                        <br><br><br>
+                        <p class="text-center" style="margin-top: 40px;">
+                            <button type="reset" class="btn btn-raised btn-secondary btn-sm"><i class="fas fa-paint-roller"></i> &nbsp; LIMPIAR</button>
+                            &nbsp; &nbsp;
+                            <button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; GUARDAR</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- MODAL Agregar ALUMNO -->
+            <div class="modal fade" id="ModalAlumno" tabindex="-1" role="dialog" aria-labelledby="ModalCliente" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalCliente">Agregar datos del alumno</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="form-group">
+                                    <label for="input_cliente" class="bmd-label-floating">DNI, Nombre, Apellido</label>
+                                    <input type="text" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]{1,30}" class="form-control" name="input_cliente" id="input_cliente" maxlength="30">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container-fluid" id="tabla_clientes">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-bordered table-sm">
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td>0000000000 - Nombre del alumno</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>0000000000 - Nombre del alumno</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td>0000000000 - Nombre del alumno</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                <p class="text-center mb-0">
+                                    <i class="fas fa-exclamation-triangle fa-2x"></i><br>
+                                    No hemos encontrado ningún cliente en el sistema que coincida con <strong>“Busqueda”</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar</button>
+                            &nbsp; &nbsp;
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+           
+
+            <!-- MODAL AGREGAR DOCTOR -->
+            <div class="modal fade" id="ModalAgregarDoctor" tabindex="-1" role="dialog" aria-labelledby="ModalAgregarItem" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <form class="modal-content FormularioAjax">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalAgregarItem">Selecciona el doctor a turno</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="hidden" name="id_agregar_item" id="id_agregar_item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="detalle_formato" class="bmd-label-floating">Nombre del doctor</label>
+                                            <select class="form-control" name="detalle_formato" id="detalle_formato">
+                                                <option value="Horas" selected="" >Romero</option>
+                                                <option value="Dias">Correa</option>
+                                                <option value="Evento">Almiron</option>
+                                                <option value="Mes">Fernandez</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+
+                            
+                            <input type="hidden" name="id_agregar_item" id="id_agregar_item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="detalle_formato" class="bmd-label-floating">N° de matricula</label>
+                                            <select class="form-control" name="detalle_formato" id="detalle_formato">
+                                                <option value="Horas" selected="" >3245rfsd</option>
+                                                <option value="Dias">654tgf</option>
+                                                <option value="Evento">76tged</option>
+                                                <option value="Mes">9856gt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" >Agregar</button>
+                            &nbsp; &nbsp;
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        </div>
+
+        </section>
+        </main>
+
+
+            <!--=============================================
+    =            Include JavaScript files           =
+    ==============================================-->
+    <!-- jQuery V3.4.1 -->
+    <script src="../js/jquery-3.4.1.min.js" ></script>
+
+	<!-- popper -->
+	<script src="../js/popper.min.js" ></script>
+
+	<!-- Bootstrap V4.3 -->
+	<script src="../js/bootstrap.min.js" ></script>
+
+	<!-- jQuery Custom Content Scroller V3.1.5 -->
+	<script src="../js/jquery.mCustomScrollbar.concat.min.js" ></script>
+
+	<!-- Bootstrap Material Design V4.0 -->
+	<script src="../js/bootstrap-material-design.min.js" ></script>
+	<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+	<script src="../js/main.js" ></script>
+
+    <!--efectos en las fotos -->
+    <script>
+        $(document).ready(function(){
+            $('.zoom').hover(function() {
+                $(this).addClass('transition');
+            }, function() {
+                $(this).removeClass('transition');
+            });
+        });
+        </script>
+    </body>
+</html>
